@@ -59,3 +59,6 @@ After preprocessing, the cleaned data is displayed on the screen.
 
 ```bash
 python preprocessing.py
+## Conclusion
+
+This project successfully demonstrates basic data preprocessing using Python. Duplicate data is removed and categorical gender values are converted into numerical values.

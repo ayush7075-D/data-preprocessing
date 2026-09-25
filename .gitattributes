@@ -1,2 +1,35 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Simple Data Preprocessing
+
+data = [
+    ["Rahul", 18, "Male", 85, 78],
+    ["Priya", 19, "Female", 90, 85],
+    ["Aman", 18, "Male", 75, 65],
+    ["Sneha", 19, "Female", 88, 82],
+    ["Rohit", 18, "Male", 70, 55]
+]
+
+print("Original Data:")
+for row in data:
+    print(row)
+
+new_data = []
+
+for row in data:
+    if row not in new_data:
+        new_data.append(row)
+
+data = new_data
+
+for row in data:
+    if row[2] == "Male":
+        row[2] = 0
+    else:
+        row[2] = 1
+
+print("\nPreprocessed Data:")
+for row in data:
+    print(row)
+
+print("\nData preprocessing completed successfully!")
